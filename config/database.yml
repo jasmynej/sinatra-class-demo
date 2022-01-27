@@ -1,19 +1,19 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: sinatra_series_dev
+  database: sinatra_class_dev
   pool: 2
 
 test:
   adapter: postgresql
   encoding: unicode
-  database: sinatra_series_test
+  database: sinatra_class_test
   pool: 2
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: sinatra_series_prod
+  database: sinatra_class_prod
   pool: 2
   username: your_username
   password: your_password
