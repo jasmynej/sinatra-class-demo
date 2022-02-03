@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_27_204117) do
+ActiveRecord::Schema.define(version: 2022_02_03_205159) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,5 +24,15 @@ ActiveRecord::Schema.define(version: 2022_01_27_204117) do
     t.string "name"
   end
 
+  create_table "cows", force: :cascade do |t|
+    t.string "name"
+    t.integer "farmer_id"
+  end
+
+  create_table "farmers", force: :cascade do |t|
+    t.string "name"
+  end
+
   add_foreign_key "cities", "countries"
+  add_foreign_key "cows", "farmers"
 end

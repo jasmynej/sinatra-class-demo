@@ -1,0 +1,15 @@
+<h1>Farm Example</h1>
+
+<h2>All Farmers</h2>
+<ul>
+    <%@farmers.each do |farmer|%>
+        <li><%= farmer.name%></li>
+    <%end%>
+</ul>
+
+<h2>All Cows</h2>
+<ul>
+    <%@cows.each do |cow|%>
+       <li><%= cow.name%></li>
+    <%end%>
+</ul>
