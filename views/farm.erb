@@ -1,15 +1,16 @@
 <h1>Farm Example</h1>
 
-<h2>All Farmers</h2>
-<ul>
-    <%@farmers.each do |farmer|%>
-        <li><%= farmer.name%></li>
-    <%end%>
-</ul>
+<div class="d-flex flex-wrap justify-content-center">
+    <% @farmers.each do |farmer|%>
+    <div class="bg-info w-25 gap-3 m-1">
+        <h3><%= farmer.name%></h3>
+        <ul>
+            <% farmer.cows.each do |cow|%>
+                <li><%= cow.name%></li>
+            <%end%>
+        </ul>
+    </div>
+<%end%>
 
-<h2>All Cows</h2>
-<ul>
-    <%@cows.each do |cow|%>
-       <li><%= cow.name%></li>
-    <%end%>
-</ul>
+</div>
+
