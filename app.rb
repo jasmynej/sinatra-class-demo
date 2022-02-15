@@ -6,6 +6,10 @@ require_relative "models/country.rb"
 require_relative "models/city.rb"
 require_relative "models/farmer.rb"
 require_relative "models/cow.rb"
+require_relative 'models/course'
+require_relative 'models/student'
+require_relative 'models/registration'
+require_relative 'models/hiring'
 
 get "/" do 
     erb :home

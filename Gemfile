@@ -8,3 +8,4 @@ gem "sinatra-activerecord"
 gem "pg"
 gem "rack-test"
 gem "faker"
+gem 'sinatra-contrib'
